@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>FriendFinder</title>
+
+	<!-- Latest compiled and minified CSS & JS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+	<!-- Font Awesome Glyphicons -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+	<!-- Chosen -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.5.1/chosen.jquery.min.js"></script>
+
+
+
+</head>
+<body>
+	<style type="text/css">
+		#matchImg{
+			max-width: 550px;
+		}
+	</style>
+	
+	<div class="container">
+
+		<h2>Survey Questions</h2>
+		<hr>
+
+		<h3><strong>About You</strong></h3>
+		<h4>Name (Required)</h4>
+		<input type="text" name="" id="name" class="form-control" required >
+
+		<h4>Link to Photo Image (Required)</h4>
+		<input type="text" name="" id="photo" class="form-control" required >
+
+		<hr>
+
+		<h3><strong>Question 1</strong></h3>
+		<h4>What sort of mood are you looking for in your next binge?</h4>
+	 	<select data-placeholder="" class="form-control" id="q1">
+	 		<option value=""></option>
+            <option value="1">Something heart warming</option>
+            <option value="2">Something suspenseful</option>
+            <option value="3">Something funny</option>
+            <option value="4">Something dramatic</option>
+            <option value="5">Something outrageous</option>
+      	</select>
+
+		<h3><strong>Question 2</strong></h3>
+		<h4>How many seasons are you ready to commit to?</h4>
+	 	<select data-placeholder="" class="form-control" id="q2">
+	 		<option value=""></option>
+            <option value="2">One sweet and short season.</option>
+            <option value="1">Two. A little more development than a miniseries but still quick and easy</option>
+            <option value="4">Three-Five. Been around, did their thang for a bit kinda show</option>
+            <option value="3">Six or more. Cuz you know a show is good if it keeps getting renewed for another go.</option>
+            <option value="5">Seasons? Please. I'm moving on if I'm not invested by ep2.</option>
+      	</select>
+
+
+
+		<h3><strong>Question 3</strong></h3>
+		<h4>What time of day do you mostly watch Netflix?</h4>
+	 	<select data-placeholder="" class="form-control" id="q3">
+	 		<option value=""></option>
+            <option value="5">While I get ready to start the day.</option>
+            <option value="3">During work.</option>
+            <option value="4">During meals.</option>
+            <option value="1">Before bed.</option>
+            <option value="2">You can turn netflix off ?___?</option>
+      	</select>
+
+
+		<h3><strong>Question 4</strong></h3>
+		<h4>If you had to watch one of these shows RIGHT now, which would it be?</h4>
+	 	<select data-placeholder="" class="form-control" id="q4">
+	 		<option value=""></option>
+            <option value="3">That 70s Show</option>
+            <option value="4">Breaking Bad</option>
+            <option value="5">Bojack Horseman</option>
+            <option value="2">Stranger Things</option>
+            <option value="1">All I ever watch is Grey's Anatomy</option>
+      	</select>
+
+
+		<h3><strong>Question 5</strong></h3>
+		<h4>Which genre are you always down for?</h4>
+	 	<select data-placeholder="" class="form-control" id="q5">
+	 		<option value=""></option>
+            <option value="4">Action</option>
+            <option value="2">Sci-Fi</option>
+            <option value="4">Mystery</option>
+            <option value="3">Classic</option>
+            <option value="1">Historic</option>
+      	</select>
+
+
+		<h3><strong>Question 6</strong></h3>
+		<h4>How long was your longest netflix binge?</h4>
+	 	<select data-placeholder="" class="form-control" id="q6">
+	 		<option value=""></option>
+            <option value="5">No more than a few episodes at a time..</option>
+            <option value="2">One season in one sitting, no biggie.</option>
+            <option value="3">Two seasons. Finally invested in most of the characters.</option>
+            <option value="4">Three or more seasons. None of the original crew remains on the show but I keep watching.</option>
+            <option value="1">Was that really 8 seasons? I think my hair grew a little and the seasons changed irl since the pilot.</option>
+      	</select>
+
+
+		<h3><strong>Question 7</strong></h3>
+		<h4>Where do you watch your netflix shows?</h4>
+	 	<select data-placeholder="" class="form-control" id="q7">
+	 		<option value=""></option>
+            <option value="1">In bed ready to ko while watching.</option>
+            <option value="2">Hook it to the living room TV and jump on the couch.</option>
+            <option value="3">On my comupter on my desk while posture training.</option>
+            <option value="4">Have it playing on any screen while I work on other stuff.</option>
+            <option value="5">Usually at a friend's place.</option>
+      	</select>
+
+		<h3><strong>Question 8</strong></h3>
+		<h4>Whose Netflix account do you use?</h4>
+	 	<select data-placeholder="" class="form-control" id="q8">
+	 		<option value=""></option>
+            <option value="1">My own!</option>
+            <option value="2">A family member's</option>
+            <option value="3">A friend's</option>
+            <option value="4">A coworker's</option>
+            <option value="5">Whoever last logged into their netflix on my computer--I shall never log out.</option>
+      	</select>
+
+		<h3><strong>Question 9</strong></h3>
+		<h4>What are your preferences for foreign shows?</h4>
+	 	<select data-placeholder="" class="form-control" id="q9">
+	 		<option value=""></option>
+            <option value="1">As long as they have subtitles, all goes.</option>
+            <option value="2">Korean shows</option>
+            <option value="3">British shows</option>
+            <option value="4">Hispanic shows</option>
+            <option value="5">You want me to reeead to watch a show? Um. No.</option>
+      	</select>
+
+		<h3><strong>Question 10</strong></h3>
+		<h4>Who gets to pick the show?</h4>
+	 	<select placeholder="pick one" class="form-control" id="q10">
+	 		<option value=""></option>
+            <option value="1">Me</option>
+            <option value="2">Mostly me but I'll let you choose a show maybe once in a blue moon</option>
+            <option value="3">Rock Paper Scissoroo Winner goes and Loser is booboo</option>
+            <option value="4">I'll usually let you pick because I'm an angel</option>
+            <option value="5">Please don't make me make more decisions today. Love it when someone surprises me with something brand new</option>
+      	</select>
+
+		<br>
+		<br>
+
+		<!-- Submit Button -->
+		<button type="submit" class="btn btn-danger btn-lg btn-block" id="submit"><i class="fa fa-check-circle" aria-hidden="true"></i>
+ Submit</button>
+
+ 		<br>
+ 		<br>
+
+
+
+	</div>
+
+	<!-- Modal -->
+	<div id="resultsModal" class="modal fade" role="dialog">
+	  <div class="modal-dialog">
+
+	    <!-- Modal content-->
+	    <div class="modal-content">
+	      <div class="modal-header">
+	        <button type="button" class="close" data-dismiss="modal">&times;</button>
+	        <h2 class="modal-title"><strong>Best Match</strong></h2>
+	      </div>
+	      <div class="modal-body">
+	        <h2 id="matchName"></h2>
+	        <img id="matchImg" src="https://flavorwire.files.wordpress.com/2013/05/tobias1.jpg?w=1056" width="500px" alt="">
+	      </div>
+	      <div class="modal-footer">
+	        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+	      </div>
+	    </div>
+
+	  </div>
+	</div>
+
+  <script type="text/javascript">
+
+    // Capture the form inputs 
+    $("#submit").on("click", function(){
+    	event.preventDefault();
+    	// Form validation
+    	function validateForm() {
+		  var isValid = true;
+		  $('.form-control').each(function() {
+		    if ( $(this).val() === '' )
+		        isValid = false;
+		  });
+
+		  return isValid;
+		}
+
+		// If all required fields are filled
+		if (validateForm() == true){
+			// Create an object for the user's data
+	    	var userData = {
+	    		name: $("#name").val(),
+	    		photo: $("#photo").val(),
+	    		scores: [$("#q1").val(), $("#q2").val(), $("#q3").val(), $("#q4").val(), $("#q5").val(), $("#q6").val(), $("#q7").val(), $("#q8").val(), $("#q9").val(), $("#q10").val() ]
+	    	}
+
+	    	var currentURL = window.location.origin;
+	    	// AJAX post the data to the friends API. 
+	    	$.post(currentURL + "/api/friends", userData, function(data){
+	    		// Grab the result from the AJAX post so that the best match's name and photo are displayed.
+	    		$("#matchName").text(data.name);
+	    		$('#matchImg').attr("src", data.photo);
+
+		    	// Show the modal with the best match 
+		    	$("#resultsModal").modal('toggle');
+
+	    	});
+		}
+		else{
+			alert("Please fill out all fields before submitting!");
+		}
+    	return false;
+    });
+
+
+  </script>
+
+</body>
+</html>
