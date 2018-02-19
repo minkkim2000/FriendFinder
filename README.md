@@ -8,29 +8,6 @@ In this activity, you'll build a compatibility-based "FriendFinder" application 
 
 You will use Express to handle routing. Make sure you deploy your app to Heroku so other users can fill it out.
 
-
-### Before You Begin
-
-* Check out [this demo version of the site](https://friend-finder.herokuapp.com/). Use this as a model for how we expect your assignment look and operate.
-
-* Create a folder called `FriendFinder`. Inside the folder, organize your directories so it matches the following:
-
-  ```
-  FriendFinder
-    - app
-      - data
-        - friends.js
-      - public
-        - home.html
-        - survey.html
-      - routing
-        - apiRoutes.js
-        - htmlRoutes.js
-    - node_modules
-    - package.json
-    - server.js
-  ```
-
 ### Instructions
 
 1. Your survey should have 10 questions of your choosing. Each answer should be on a scale of 1 to 5 based on how much the user agrees or disagrees with a question.
@@ -83,27 +60,4 @@ You will use Express to handle routing. Make sure you deploy your app to Heroku 
    * The modal should display both the name and picture of the closest match. 
 
 - - -
-
-### Minimum Requirements
-
-Attempt to complete homework assignment as described in instructions. If unable to complete certain portions, please pseudocode these portions to describe what remains to be completed.
-
-- - -
-
-### Hosting on Heroku
-
-Now that we have a backend to our applications, we use Heroku for hosting. Please note that while **Heroku is free**, it will request credit card information if you have more than 5 applications at a time or are adding a database. 
-
-Please see [Heroku’s Account Verification Information](https://devcenter.heroku.com/articles/account-verification) for more details. 
-
-- - -
-
-### One More Thing
-
-If you have any questions about this project or the material we have covered, please post them in the community channels in slack so that your fellow developers can help you! If you're still having trouble, you can come to office hours for assistance from your instructor and TAs.
-
-**Good Luck!**
-
-## Copyright
-
-Coding Boot Camp (C) 2016. All Rights Reserved.
+See app live here: https://netflix-friend-finder.herokuapp.com/
